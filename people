@@ -19,28 +19,14 @@
   <div class="logo">
     <h4>Jason Madani</h4>
   </div>
+    
+                <li><a href="Home.html">Home</a></li>
 
-  <div class="line"></div>
 
-  <div class="small-container">
-    <div class="row">
+                <li>
+                    <a href="Gallery.html">Gallery</a>
 
-      <div class="col-4">
-        <img src="imagesworld/q2.jpg" alt="People">
-        <p>People</p>
-      </div>
 
-      <div class="col-4">
-        <img src="imagesworld/q1.jpg" alt="Misc">
-        <p>Misc</p>
-      </div>
-
-      <div class="col-4">
-        <img src="imagesworld/q3.jpg" alt="Animals">
-        <p>Animals</p>
-      </div>
-
-    </div>
   </div>
 
   <footer>
