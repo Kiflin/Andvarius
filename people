@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="logo">
+    <h4>Jason Madani</h4>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="small-container">
+    <div class="row">
+
+      <div class="col-4">
+        <img src="imagesworld/q2.jpg" alt="People">
+        <p>People</p>
+      </div>
+
+      <div class="col-4">
+        <img src="imagesworld/q1.jpg" alt="Misc">
+        <p>Misc</p>
+      </div>
+
+      <div class="col-4">
+        <img src="imagesworld/q3.jpg" alt="Animals">
+        <p>Animals</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <hr>
+    &copy; copyright reserved
+  </footer>
+
+</body>
+</html>
