@@ -1,369 +1,44 @@
-
-
-
-
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
 
-body{
-    background:black;
+/* Body styling */
+body {
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 50px 100px 100px 100px
-
+    color: white;
+    padding: 20px;
 }
 
-
-
-/*---header----*/
-
-
-
-ul {
-    list-style: none;
-    text-align: center;
+/* Container for gallery */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-ul li {
-    display: inline-block;
-    position: relative ;
- 
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
-
-ul li a {
-    display: block;
-    padding: 20px 25px;
-    text-align: center;
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    transition: 0.5s;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    
+/* Individual image styling */
+.gallery .img {
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-ul li ul.dropdown li {
-    display: block;
-
-}
-
-ul li ul.dropdown {
+.gallery .img img {
     width: 100%;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    opacity: 0.9;
-    transition: 0.5s;
-    background: rgb(17, 17, 17);
-  
-}
-
-ul li a:hover{
-    background-color: #3a3939;
-
-}
-
-ul li:hover ul.dropdown {
     display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.logo h4{
-    color: rgb(218, 216, 216);
-    font-size: 35px;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
-    font-family: "Caveat";
-    font-style: italic;
-}
-
-
-
-/*---line----*/
-
-
-.line {
-    width: 100%;
-    height: 1px;
-   background-color: rgb(107, 107, 107);
-}
-
-/*---line----*/
-
-
-
-
-
- p {
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-
-}
-
-
-h1 {
-    color: #ffffff;
-    text-align: center;
-
-
-}
-
-.text {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-
-
-.text p {
-    color: white;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 80px 20px 20px 20px;
-    flex-basis: 25%;
-    min-width: 200px;
-
-}
-
-
-
-
-/*---text home----*/
-
-    .about-section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .about-text {
-      flex: 1;
-      min-width: 300px;
-      padding-right: 40px;
-    }
-
-    .about-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .about-text p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      color: #c7c1c1;
-      margin-bottom: 20px;
-    }
-
-    .about-image {
-      flex: 1;
-      min-width: 200px;
-      max-width: 400px;
-    }
-
-    .about-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-
-/*---text home----*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.btn{
-    display: inline-block;
-    background: rgb(204, 78, 78);
-    color: white;
-    padding: 8px 30px;
-    margin: 30px 0;
-    margin-left: 40px;
-    border-radius: 30px;
-
-}
-
-
-
-.small-container {
-    max-width: 1080px;
-    margin: auto;
-    margin-top: 160px;
-
-}
-
-
-
-
-.row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    margin-bottom: 200px;
-
-}
-
-
-
-.col-4 {
-    flex-basis: 25%;
-    text-align: left;
-box-shadow: 4px 7px 7px 0px;
-cursor: pointer;
-margin: 10px;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-min-width: 400px;
-}
-
-
-
-.col-4 img{
-    width: 100%;
-
-  
-}
-
-
-
-.col-4 img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-
-}
-
-
-
-
-
-
-
-
-
-.h4 {
-    color: rgb(255, 255, 255);
-    font-size: 26px;
-    font-family: "Caveat";
-    font-style: italic;
-}
-
-.col-4 p {
-    font-size: 18px;
-    font-family: "roos disply",  Arial, Helvetica, sans-serif ;
-
-
-}
-
-.h2 {
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 715px) {
-
-header {
-    height: 250px;
-    background-position: 0 -30px;
-    }
-
-    header  .mobile {
-        display: inline-block;
-    }
-    
-
-    header  .desktop {
-        display: none;
-    }
-
-
-    .col-4 {
-        margin-bottom: 20px;
-       
-    }
-
-.row {
-    flex-wrap: wrap;
-}
-
-
-    }
-
-
-
-
-
-
-
-@media screen and (max-width: 500px) {
-    header {
-        height: 200px;
-        background: 0 -0;
-    
-    }
-
-    .row {
-        flex-wrap: wrap;
-    }
-    
-
-}
-
-
-   @media (max-width: 768px) {
-      .about-section {
-        flex-direction: column;
-        padding: 40px 20px;
-      }
-
-      .about-text {
-        padding-right: 0;
-        margin-bottom: 30px;
-      }
-    }
-
-
-
-
-
-
-footer {
-    margin-top: 20px;
-        font-size: 17px;
-        text-align: center;
-        color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
-
-   
-
-
-   
+/* Hover effect */
+.gallery .img img:hover {
+    transform: scale(1.05);
