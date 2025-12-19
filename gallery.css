@@ -1,75 +1,63 @@
-h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top:40px ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    font-family: 'Caveat', cursive;
+    color: white;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+/* Masonry gallery */
+.gallery {
+    column-count: 3;           /* 3 columns */
+    column-gap: 10px;
+    width: 100%;
+}
+
+.img {
+    break-inside: avoid;       /* Prevent images from breaking columns */
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;               /* Full column width */
+    height: auto;              /* Maintain aspect ratio */
+    display: block;
+    transition: 0.3s;
+}
+
+.img img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.05);    /* subtle zoom effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1180px) {
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+        column-count: 2;
     }
+}
 
-    .photo {
-      border: 1px solid #000000;
-      padding: 10px;
-      background: #000000;
-       
-    }
-
-
-    .photo:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-
-    }
-
-
-    .photo img {
-      width: 100%;
-      height: auto;
-      display: block;
- 
-    }
-
-
-
-
-
-    .photo img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-
-    @media print {
-      body {
-        margin: 0;
-
-
-      }
-
-      .photo {
-        break-inside: avoid;
-        page-break-inside: avoid;
-      }
-
-      .gallery {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 780px) {
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    
-@media (max-width: 7786px) {
+@media (max-width: 768px) {
     .gallery {
-        columns: 1;
-       
+        column-count: 1;
     }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
