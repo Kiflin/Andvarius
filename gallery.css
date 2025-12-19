@@ -1,43 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: black;
-    font-family: 'Caveat', cursive;
-    color: white;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px;
 }
-
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-    padding-top: 80px;
-}
-
-/* Masonry gallery */
-.gallery {
-    column-count: 3;           /* 3 columns */
-    column-gap: 10px;
-    width: 100%;
-}
-
-.img {
-    break-inside: avoid;       /* Prevent images from breaking columns */
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-
-.img img {
-    width: 100%;               /* Full column width */
-    height: auto;              /* Maintain aspect ratio */
-    display: block;
-    transition: 0.3s;
-}
-
-
-
 
 .title {
   text-align: center;
@@ -45,3 +17,17 @@ body {
   margin-bottom: 40px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
