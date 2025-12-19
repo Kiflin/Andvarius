@@ -1,44 +1,77 @@
-/* Reset default styles */
+/* Reset and box sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
-    background-color: black;
+    background-color: #000;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding: 20px;
+    color: #fff;
 }
 
-/* Container for gallery */
-.container {
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header .logo {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+/* Gallery container */
+.gallery-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Gallery grid */
+/* Gallery layout */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 10px;
 }
 
-/* Individual image styling */
-.gallery .img {
+.img {
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
-.gallery .img img {
+.img img {
     width: 100%;
     display: block;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Hover effect */
-.gallery .img img:hover {
+.img img:hover {
     transform: scale(1.05);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
