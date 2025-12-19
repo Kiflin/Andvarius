@@ -33,6 +33,7 @@ body {
   border-radius: 10px;
    pointer-events: none;
   user-select: none;
+   background-image: url("watermark.png");
 }
 
 /* Hover effect (optional) */
