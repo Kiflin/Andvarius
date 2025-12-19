@@ -82,6 +82,15 @@ ul li:hover ul.dropdown {
 }
 
 
+img {
+  width: 100vw;        /* full viewport width */
+  height: 100vh;       /* full viewport height */
+  object-fit: cover;   /* fills container, may crop slightly */
+  display: block;      /* removes extra space below images */
+  margin: 0;
+  padding: 0;
+}
+
 
 /*---line----*/
 
