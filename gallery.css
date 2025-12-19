@@ -45,11 +45,3 @@ body {
   margin-bottom: 40px;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
