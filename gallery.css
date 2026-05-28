@@ -47,17 +47,19 @@ body {
 /* Watermark */
 .watermark {
   position: absolute;
+  bottom: 10px;   /* udaljenost od dna */
+  left: 50%;
+  transform: translateX(-50%);
+
   font-size: 48px;
   font-weight: bold;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.10);
+
+  color: rgba(255,255,255,0.05);
+
   pointer-events: none;
-  
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-   text-align: center;
+
 }
 
 /* Responsive */
