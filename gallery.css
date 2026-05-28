@@ -47,8 +47,6 @@ body {
 /* Watermark */
 .watermark {
   position: absolute;
-  inset: 0;
-
   font-size: 48px;
   font-weight: bold;
   letter-spacing: 6px;
