@@ -57,6 +57,9 @@ body {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.10);
   pointer-events: none;
+  /* move watermark downward */
+  transform: translateY(80px);
+  
 }
 
 /* Responsive */
